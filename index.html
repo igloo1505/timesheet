@@ -2,10 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     
+    <div class="container">
+        <h2>Employee Data Management</h2>
+        <p></p>
+
+
+        <table class="table">
+           <h6>Current Employees</h6>
+          <thead>
+            <tr>
+              <!-- The scope attribute specifies that this is a header for a column -->
+              <th scope="col">Employee Name</th>
+              <th scope="col">Role</th>
+              <th scope="col">Start Date</th>
+              <th scope="col">Months Worked</th>
+              <th scope="col">Monthly Rate</th>
+              <th scope="col">Total Billed</th>
+            </tr>
+          </thead>
+    
+          <tbody>
+         
+            <!-- Insert additional employee rows here -->
+          </tbody>
+        </table>
+        <form>
+            <div class="form-group row">
+              <label for="bidder-name">Employee Name</label>
+              <input class="form-control" id="bidder-name" type="text">
+            </div>
+            <div class="form-group row">
+              <label for="bidder-price">Role</label>
+              <input class="form-control" id="bidder-price" type="number">
+            </div>
+            <div class="form-group row">
+                <label for="bidder-name">Start Date</label>
+                <input class="form-control" id="bidder-name" type="text">
+              </div>
+              <div class="form-group row">
+                <label for="bidder-price">Monthly Rate</label>
+                <input class="form-control" id="bidder-price" type="number">
+              </div>
+            <button class="btn btn-primary" id="submit-bid" type="submit">Submit</button>
+          </form>
+      </div>
+
+
+    <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
