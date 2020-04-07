@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+    
+  <script src="https://code.jquery.com/jquery.js"></script>
+  
     <title>Document</title>
 </head>
 <body>
@@ -36,22 +42,22 @@
         </table>
         <form>
             <div class="form-group row">
-              <label for="bidder-name">Employee Name</label>
-              <input class="form-control" id="bidder-name" type="text">
+              <label for="employee-name">Employee Name</label>
+              <input class="form-control" id="employee-name" type="text">
             </div>
             <div class="form-group row">
-              <label for="bidder-price">Role</label>
-              <input class="form-control" id="bidder-price" type="number">
+              <label for="role">Role</label>
+              <input class="form-control" id="role" type="text">
             </div>
             <div class="form-group row">
-                <label for="bidder-name">Start Date</label>
-                <input class="form-control" id="bidder-name" type="text">
+                <label for="date">Start Date</label>
+                <input class="form-control" id="date" type="text">
               </div>
               <div class="form-group row">
-                <label for="bidder-price">Monthly Rate</label>
-                <input class="form-control" id="bidder-price" type="number">
+                <label for="rate">Monthly Rate</label>
+                <input class="form-control" id="rate" type="number">
               </div>
-            <button class="btn btn-primary" id="submit-bid" type="submit">Submit</button>
+            <button class="btn btn-primary" id="add-employee" type="submit">Submit</button>
           </form>
       </div>
 
